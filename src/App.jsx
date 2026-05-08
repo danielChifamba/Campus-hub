@@ -44,45 +44,7 @@ function App() {
 
       {!isLanding && <Navigation />}
       
-      <style jsx>{`
-        .app-shell {
-          display: flex;
-          flex-direction: column;
-          height: 100vh;
-          max-width: 600px;
-          margin: 0 auto;
-          background: var(--bg-primary);
-          position: relative;
-        }
-        
-        .content {
-          flex: 1;
-          overflow-y: auto;
-          padding: 20px;
-          padding-bottom: calc(var(--nav-height) + 20px);
-          scrollbar-width: none;
-        }
-        
-        .content::-webkit-scrollbar {
-          display: none;
-        }
-        
-        .content.full-width {
-          padding-bottom: 20px;
-        }
-        
-        .page {
-          min-height: 100%;
-        }
-        
-        h1 {
-          margin-bottom: 20px;
-          font-size: 1.8rem;
-          background: linear-gradient(135deg, var(--text-primary), var(--accent-primary));
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-      `}</style>
+
     </div>
   )
 }
